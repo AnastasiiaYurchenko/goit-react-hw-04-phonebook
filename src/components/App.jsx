@@ -1,4 +1,5 @@
 import { Component } from 'react';
+// import { Component, useState } from 'react';
 import { Layout } from './Layout/Layout';
 import { GlobalStyle } from './GlobalStyle';
 import { ContactsForm } from './ContactsForm/ContactsForm';
@@ -82,3 +83,26 @@ export class App extends Component {
     );
   }
 }
+
+// export const App = () => {
+//   const [contacts, setContacts] = useState([]);
+//   const [filter, setFilter] = useState('');
+
+//   const changeFilter = e => {
+//     setFilter(e.currentTarget.value);
+//   };
+
+//   return (
+//     <Layout>
+//       <h1>Phonebook</h1>
+//       <ContactsForm onSave={this.addContact} />
+//       <h2>Contacts</h2>
+//       <Filter value={this.state.filter} onChange={changeFilter} />
+//       <ContactsList
+//         contacts={this.getVisibleContacts()}
+//         onDelete={this.deleteContact}
+//       />
+//       <GlobalStyle />
+//     </Layout>
+//   );
+// };
