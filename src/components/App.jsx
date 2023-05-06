@@ -1,4 +1,3 @@
-// import { Component } from 'react';
 import { useEffect, useState } from 'react';
 import { Layout } from './Layout/Layout';
 import { GlobalStyle } from './GlobalStyle';
